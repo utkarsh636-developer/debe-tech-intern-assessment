@@ -1,7 +1,9 @@
 import { Session } from "@/types";
 
 function hoursFromNow(hours: number): string {
-  return new Date(Date.now() + hours * 60 * 60 * 1000).toISOString();
+  const date = new Date(Date.now() + hours * 60 * 60 * 1000);
+  date.setMinutes(0, 0, 0);
+  return date.toISOString();
 }
 
 export const mockSessions: Session[] = [
