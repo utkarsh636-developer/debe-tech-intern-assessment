@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 /**
  * tailwind.config.ts
  *
- * Extends Tailwind with the custom dark-palette colours, animations, shadows,
+ * Extends Tailwind with the custom light-palette colours, animations, shadows,
  * and keyframes used throughout the TutorConnect parent portal.
  * Using named tokens in the config keeps arbitrary-value noise out of JSX.
  */
@@ -13,24 +13,24 @@ const config: Config = {
     extend: {
       // ── Custom colour palette ─────────────────────────────────────────────
       colors: {
-        // Background layers
+        // Background layers — light theme
         bg: {
-          base: "#0a0b14",
-          surface: "#12131f",
-          surface2: "#1a1b2e",
-          surface3: "#21223a",
+          base: "#f5f6ff",       // very light indigo-tinted white page bg
+          surface: "#ffffff",     // pure white card surface
+          surface2: "#f0f1ff",   // light indigo inputs / secondary surfaces
+          surface3: "#e8e9f8",   // slightly deeper for hover states
         },
-        // Brand / accent (indigo-ish)
+        // Brand / accent (indigo)
         brand: {
           DEFAULT: "#6366f1",
-          hover: "#818cf8",
-          muted: "#a5b4fc",
+          hover: "#4f46e5",
+          muted: "#818cf8",
         },
-        // Text hierarchy
+        // Text hierarchy — dark on light
         content: {
-          primary: "#f0f1ff",
-          secondary: "#8b8fa8",
-          muted: "#555870",
+          primary: "#1e1b4b",    // deep indigo near-black
+          secondary: "#4b5563",  // gray-600
+          muted: "#9ca3af",      // gray-400
         },
       },
 
@@ -41,10 +41,10 @@ const config: Config = {
 
       // ── Custom box shadows ────────────────────────────────────────────────
       boxShadow: {
-        card: "0 4px 24px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.04) inset",
-        modal: "0 24px 64px rgba(0,0,0,0.7)",
-        "brand-glow": "0 0 16px rgba(99,102,241,0.3)",
-        "brand-glow-lg": "0 0 24px rgba(99,102,241,0.3)",
+        card: "0 2px 12px rgba(99,102,241,0.08), 0 1px 3px rgba(0,0,0,0.06)",
+        modal: "0 16px 48px rgba(99,102,241,0.15), 0 4px 16px rgba(0,0,0,0.08)",
+        "brand-glow": "0 0 16px rgba(99,102,241,0.25)",
+        "brand-glow-lg": "0 0 24px rgba(99,102,241,0.35)",
       },
 
       // ── Custom keyframes ──────────────────────────────────────────────────

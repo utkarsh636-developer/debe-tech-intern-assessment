@@ -36,20 +36,20 @@ export default function RescheduleModal({
 
   return (
     <div
-      className="fixed inset-0 bg-black/75 backdrop-blur-md flex items-center justify-center z-[1000] p-4 animate-fade-in"
+      className="fixed inset-0 bg-indigo-950/30 backdrop-blur-sm flex items-center justify-center z-[1000] p-4 animate-fade-in"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
     >
       <div
-        className="bg-bg-surface border border-white/[0.15] rounded-3xl shadow-modal w-full max-w-[480px] p-8 animate-slide-up"
+        className="bg-bg-surface border border-indigo-100 rounded-3xl shadow-modal w-full max-w-[480px] p-8 animate-slide-up"
         onClick={(e) => e.stopPropagation()}
       >
         {isSuccess ? (
           <div className="text-center py-4">
             <div
-              className="w-14 h-14 bg-emerald-400/10 border-2 border-emerald-400 rounded-full flex items-center justify-center text-2xl text-emerald-400 mx-auto mb-5 animate-pop-in"
+              className="w-14 h-14 bg-emerald-50 border-2 border-emerald-500 rounded-full flex items-center justify-center text-2xl text-emerald-600 mx-auto mb-5 animate-pop-in"
               aria-hidden="true"
             >
               ✓
@@ -94,7 +94,7 @@ export default function RescheduleModal({
 
               <button
                 onClick={onClose}
-                className="bg-bg-surface3 border border-white/[0.08] text-content-secondary w-8 h-8 rounded-full flex items-center justify-center text-xs shrink-0 hover:bg-red-400/[0.08] hover:text-red-400 hover:border-red-400/25 transition-all duration-150"
+                className="bg-bg-surface2 border border-indigo-100 text-content-secondary w-8 h-8 rounded-full flex items-center justify-center text-xs shrink-0 hover:bg-red-50 hover:text-red-500 hover:border-red-200 transition-all duration-150"
                 aria-label="Close modal"
               >
                 ✕

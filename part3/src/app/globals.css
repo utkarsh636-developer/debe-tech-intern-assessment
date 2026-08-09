@@ -3,47 +3,44 @@
 @tailwind utilities;
 
 /*
- * react-datepicker dark-mode overrides
+ * react-datepicker light-mode overrides
  * ─────────────────────────────────────────────────────────────────────────────
- * These rules override styles shipped inside react-datepicker's own CSS bundle.
+ * These rules override styles inside react-datepicker's own CSS bundle.
  * They CANNOT be replaced with Tailwind utility classes because they target
- * class names that are generated inside the library's internal DOM — we have no
- * JSX surface to attach utilities to. Everything else in this project uses
- * Tailwind utilities directly in the component JSX.
+ * class names generated inside the library's internal DOM.
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-/* Picker popup container */
 .react-datepicker {
   font-family: var(--font-geist), Inter, system-ui, sans-serif !important;
-  background: #1a1b2e !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: #ffffff !important;
+  border: 1px solid #e0e7ff !important;
   border-radius: 12px !important;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7) !important;
-  color: #f0f1ff !important;
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.12) !important;
+  color: #1e1b4b !important;
 }
 
 .react-datepicker__header {
-  background: #21223a !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: #f5f6ff !important;
+  border-bottom: 1px solid #e0e7ff !important;
   border-radius: 12px 12px 0 0 !important;
 }
 
 .react-datepicker__current-month,
 .react-datepicker__day-name,
 .react-datepicker-time__header {
-  color: #f0f1ff !important;
+  color: #1e1b4b !important;
 }
 
 .react-datepicker__day {
-  color: #8b8fa8 !important;
+  color: #4b5563 !important;
   border-radius: 6px !important;
   transition: background 0.1s ease !important;
 }
 
 .react-datepicker__day:hover:not(.react-datepicker__day--disabled) {
-  background: #21223a !important;
-  color: #f0f1ff !important;
+  background: #e0e7ff !important;
+  color: #1e1b4b !important;
 }
 
 .react-datepicker__day--selected,
@@ -55,28 +52,28 @@
 /* Disabled slots — the visual indicator for the 2-hour lockout */
 .react-datepicker__day--disabled,
 .react-datepicker__time-list-item--disabled {
-  color: #555870 !important;
-  opacity: 0.4 !important;
+  color: #c4b5fd !important;
+  opacity: 0.5 !important;
   cursor: not-allowed !important;
 }
 
 .react-datepicker__time-container {
-  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-left: 1px solid #e0e7ff !important;
 }
 
 .react-datepicker__time,
 .react-datepicker__time-box {
-  background: #1a1b2e !important;
+  background: #ffffff !important;
 }
 
 .react-datepicker__time-list-item {
-  color: #8b8fa8 !important;
+  color: #4b5563 !important;
   transition: background 0.1s ease !important;
 }
 
 .react-datepicker__time-list-item:hover:not(.react-datepicker__time-list-item--disabled) {
-  background: #21223a !important;
-  color: #f0f1ff !important;
+  background: #e0e7ff !important;
+  color: #1e1b4b !important;
 }
 
 .react-datepicker__time-list-item--selected {
@@ -85,10 +82,9 @@
 }
 
 .react-datepicker__navigation-icon::before {
-  border-color: #8b8fa8 !important;
+  border-color: #6366f1 !important;
 }
 
-/* Ensure picker popup renders on top of modal */
 .react-datepicker-popper {
   z-index: 1100 !important;
 }

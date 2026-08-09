@@ -26,7 +26,7 @@ const RESCHEDULE_REASONS: RescheduleReason[] = [
 ];
 
 const INPUT_CLASSES =
-  "w-full bg-bg-surface2 border border-white/[0.08] rounded-lg text-content-primary text-sm px-3.5 py-2.5 outline-none transition-all duration-150 focus:border-brand focus:ring-2 focus:ring-brand/30 disabled:opacity-50 disabled:cursor-not-allowed";
+  "w-full bg-white border border-gray-200 rounded-lg text-content-primary text-sm px-3.5 py-2.5 outline-none transition-all duration-150 focus:border-brand focus:ring-2 focus:ring-brand/20 disabled:opacity-50 disabled:cursor-not-allowed";
 
 
 export default function RescheduleForm({
@@ -150,7 +150,7 @@ export default function RescheduleForm({
 
       {errorMessage !== null && (
         <p
-          className="text-[0.825rem] text-red-400 bg-red-400/[0.08] border border-red-400/25 rounded-lg px-3.5 py-2.5 animate-shake-in"
+          className="text-[0.825rem] text-red-600 bg-red-50 border border-red-200 rounded-lg px-3.5 py-2.5 animate-shake-in"
           role="alert"
           aria-live="polite"
         >
@@ -163,7 +163,7 @@ export default function RescheduleForm({
           type="button"
           onClick={onCancel}
           disabled={isSubmitting}
-          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-lg border border-white/[0.08] text-content-secondary bg-transparent hover:bg-bg-surface3 hover:text-content-primary transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.97]"
+          className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-lg border border-gray-200 text-content-secondary bg-transparent hover:bg-bg-surface2 hover:text-content-primary transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.97]"
         >
           Cancel
         </button>

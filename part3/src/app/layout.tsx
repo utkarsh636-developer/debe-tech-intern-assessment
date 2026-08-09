@@ -24,8 +24,8 @@ export default function RootLayout({
         className="bg-bg-base text-content-primary font-sans antialiased min-h-screen"
         style={{
           backgroundImage: [
-            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99,102,241,0.15), transparent)",
-            "radial-gradient(ellipse 60% 40% at 80% 60%, rgba(236,72,153,0.05), transparent)",
+            "radial-gradient(ellipse 80% 40% at 50% -10%, rgba(99,102,241,0.10), transparent)",
+            "radial-gradient(ellipse 50% 30% at 90% 80%, rgba(139,92,246,0.06), transparent)",
           ].join(", "),
         }}
       >

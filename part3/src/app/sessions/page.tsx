@@ -15,7 +15,7 @@ export default function SessionsPage() {
 
         <header className="flex items-start justify-between mb-10 gap-4 flex-wrap">
           <div>
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight bg-gradient-to-br from-content-primary to-brand-muted bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight bg-gradient-to-br from-content-primary to-brand bg-clip-text text-transparent">
               My Sessions
             </h1>
             <p className="text-content-secondary text-sm mt-2">
@@ -23,7 +23,7 @@ export default function SessionsPage() {
             </p>
           </div>
 
-          <div className="bg-brand/15 border border-brand/30 text-brand-muted text-xs font-semibold tracking-widest uppercase px-3.5 py-1.5 rounded-full whitespace-nowrap shrink-0">
+          <div className="bg-brand/10 border border-brand/20 text-brand text-xs font-semibold tracking-widest uppercase px-3.5 py-1.5 rounded-full whitespace-nowrap shrink-0">
             Parent Portal
           </div>
         </header>

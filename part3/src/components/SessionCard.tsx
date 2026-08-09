@@ -25,7 +25,7 @@ export default function SessionCard({ session }: SessionCardProps) {
 
   return (
     <>
-      <article className="bg-bg-surface border border-white/[0.08] rounded-2xl shadow-card overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-0.5 hover:border-white/[0.15] hover:shadow-lg group">
+      <article className="bg-bg-surface border border-indigo-100 rounded-2xl shadow-card overflow-hidden flex flex-col transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(99,102,241,0.15)] group">
 
         <div className="h-[3px] w-full" style={{ background: accent }} />
 
@@ -35,7 +35,7 @@ export default function SessionCard({ session }: SessionCardProps) {
               {session.subject}
             </span>
 
-            <span className="text-[0.7rem] font-semibold tracking-wider uppercase text-emerald-400 bg-emerald-400/10 px-2.5 py-0.5 rounded-full border border-emerald-400/30">
+            <span className="text-[0.7rem] font-semibold tracking-wider uppercase text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
               {session.status}
             </span>
           </div>
@@ -65,7 +65,7 @@ export default function SessionCard({ session }: SessionCardProps) {
 
         <div className="px-5 pb-5">
           <button
-            className="w-full bg-bg-surface2 text-content-secondary border border-white/[0.08] text-sm font-medium rounded-lg py-2.5 px-4 transition-all duration-150 hover:bg-brand/10 hover:border-brand/40 hover:text-brand-muted"
+            className="w-full bg-bg-surface2 text-brand border border-brand/20 text-sm font-medium rounded-lg py-2.5 px-4 transition-all duration-150 hover:bg-brand hover:text-white hover:border-brand"
             onClick={() => setIsModalOpen(true)}
             aria-label={`Request reschedule for ${session.subject} with ${session.teacherName}`}
           >
