@@ -1,12 +1,5 @@
 "use client";
 
-/**
- * @file src/components/RescheduleModal.tsx
- *
- * Modal overlay that wraps RescheduleForm.
- * Handles open/close animation and the success confirmation state.
- */
-
 import React, { useEffect, useState } from "react";
 import { Session } from "@/types";
 import RescheduleForm from "./RescheduleForm";
